@@ -1,0 +1,20 @@
+site_name: TestPlan Documentation
+nav:
+  - Home: index.md
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: indigo
+    accent: indigo
+  language: es
+  features:
+    - navigation.instant
+    - search.highlight
+    - search.share
+
+nav:
+  - Inicio: index.md
+
+plugins:
+  - search
