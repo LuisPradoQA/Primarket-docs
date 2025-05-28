@@ -1,0 +1,857 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Criterios de Aceptación (S0) - TestPlan Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#criterios-de-aceptacion-sprint-0" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href=".." title="TestPlan Documentation" class="md-header__button md-logo" aria-label="TestPlan Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            TestPlan Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Criterios de Aceptación (S0)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartir" aria-label="Compartir" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="TestPlan Documentation" class="md-nav__button md-logo" aria-label="TestPlan Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    TestPlan Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inicio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Criterios de Aceptación (S0)
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Criterios de Aceptación (S0)
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hu-005-publicacion-de-productos" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧾 HU-005 – Publicación de Productos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧾 HU-005 – Publicación de Productos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-aceptacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Criterios de Aceptación
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definition-of-done-dod" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Definition of Done (DoD)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hu-010-perfil-del-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧾 HU-010 – Perfil del Usuario
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧾 HU-010 – Perfil del Usuario">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-aceptacion_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Criterios de Aceptación
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definition-of-done-dod_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Definition of Done (DoD)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hu-011-inicio-de-sesion-y-seguridad" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧾 HU-011 – Inicio de Sesión y Seguridad
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧾 HU-011 – Inicio de Sesión y Seguridad">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-aceptacion_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Criterios de Aceptación
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definition-of-done-dod_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Definition of Done (DoD)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hu-007-registro-y-creacion-de-cuenta" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧾 HU-007 – Registro y Creación de Cuenta
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧾 HU-007 – Registro y Creación de Cuenta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-aceptacion_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Criterios de Aceptación
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definition-of-done-dod_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Definition of Done (DoD)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hu-001-agregar-productos-a-favoritos" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧾 HU-001 – Agregar productos a favoritos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧾 HU-001 – Agregar productos a favoritos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-aceptacion_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Criterios de Aceptación
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definition-of-done-dod_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Definition of Done (DoD)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#hu-005-publicacion-de-productos" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧾 HU-005 – Publicación de Productos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧾 HU-005 – Publicación de Productos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-aceptacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Criterios de Aceptación
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definition-of-done-dod" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Definition of Done (DoD)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hu-010-perfil-del-usuario" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧾 HU-010 – Perfil del Usuario
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧾 HU-010 – Perfil del Usuario">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-aceptacion_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Criterios de Aceptación
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definition-of-done-dod_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Definition of Done (DoD)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hu-011-inicio-de-sesion-y-seguridad" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧾 HU-011 – Inicio de Sesión y Seguridad
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧾 HU-011 – Inicio de Sesión y Seguridad">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-aceptacion_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Criterios de Aceptación
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definition-of-done-dod_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Definition of Done (DoD)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hu-007-registro-y-creacion-de-cuenta" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧾 HU-007 – Registro y Creación de Cuenta
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧾 HU-007 – Registro y Creación de Cuenta">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-aceptacion_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Criterios de Aceptación
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definition-of-done-dod_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Definition of Done (DoD)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hu-001-agregar-productos-a-favoritos" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧾 HU-001 – Agregar productos a favoritos
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧾 HU-001 – Agregar productos a favoritos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#criterios-de-aceptacion_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✅ Criterios de Aceptación
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#definition-of-done-dod_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧪 Definition of Done (DoD)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="criterios-de-aceptacion-sprint-0">📋 Criterios de Aceptación – Sprint 0</h1>
+<p>Este documento reúne los <strong>criterios de aceptación</strong> y la <strong>Definition of Done (DoD)</strong> para las historias de usuario incluidas en el Sprint 0 del proyecto <strong>Primarket</strong>.</p>
+<p>Los criterios de aceptación están redactados de forma clara, objetiva y verificable. Su propósito es alinear las expectativas del equipo de desarrollo, producto y QA para asegurar que cada historia cumpla con las condiciones necesarias para ser considerada “hecha”.</p>
+<p>Cada entrada incluye:
+- 🧾 La historia de usuario correspondiente
+- ✅ Criterios de aceptación (funcionales y técnicos)
+- 🧪 Definition of Done (DoD): checklist mínimo de calidad y entregables</p>
+<p>Este documento sirve como <strong>base para el diseño de casos de prueba</strong>, revisión de historias, seguimiento de avances y validación previa al cierre de cada tarea.</p>
+<hr />
+<h3 id="hu-005-publicacion-de-productos">🧾 HU-005 – Publicación de Productos</h3>
+<p><strong>Historia de Usuario:</strong><br />
+Como usuario vendedor, quiero poder publicar productos en la plataforma completando todos los datos necesarios, subiendo imágenes y archivos técnicos, y estableciendo las condiciones de entrega, para que mis productos sean visibles y confiables para los potenciales compradores.</p>
+<hr />
+<h4 id="criterios-de-aceptacion">✅ Criterios de Aceptación</h4>
+<ul>
+<li>[ ] El formulario de publicación incluye campos obligatorios: título, categoría, estado del producto, unidad de venta, precio y descripción técnica.</li>
+<li>[ ] El usuario puede subir entre 1 y 10 imágenes por producto (formatos admitidos: JPG, PNG).</li>
+<li>[ ] Se debe indicar la ubicación del producto (localidad y provincia).</li>
+<li>[ ] El usuario puede seleccionar condiciones de entrega: retiro en domicilio, logística propia o envío acordado con el comprador.</li>
+<li>[ ] El usuario puede adjuntar una ficha técnica en formato PDF o como imagen adicional.</li>
+<li>[ ] Toda publicación pasa por una revisión automática (validaciones básicas).</li>
+<li>[ ] Luego se aplica una moderación manual antes de que el producto sea visible públicamente.</li>
+<li>[ ] El usuario recibe una notificación si su publicación es aprobada, rechazada o requiere cambios.</li>
+</ul>
+<hr />
+<h4 id="definition-of-done-dod">🧪 Definition of Done (DoD)</h4>
+<ul>
+<li>[ ] Validación completa del formulario de publicación con campos obligatorios y formatos admitidos.</li>
+<li>[ ] Subida y visualización de imágenes correctamente testeada en distintos navegadores.</li>
+<li>[ ] Se probaron las tres opciones de entrega en el frontend y backend.</li>
+<li>[ ] Validación de archivo técnico adjunto (PDF o imagen).</li>
+<li>[ ] Simulación de estados de publicación (en revisión, rechazada, publicada).</li>
+<li>[ ] Pruebas de notificaciones (visualización o envío por email).</li>
+<li>[ ] Historia verificada por QA en entorno QA y validada por PO.</li>
+</ul>
+<hr />
+<h3 id="hu-010-perfil-del-usuario">🧾 HU-010 – Perfil del Usuario</h3>
+<p><strong>Historia de Usuario:</strong><br />
+Como usuario de la plataforma, quiero tener un perfil donde pueda gestionar mi información personal y comercial, visualizar mi historial de actividad y mostrar ciertos datos públicos que refuercen mi reputación y credibilidad en la comunidad.</p>
+<hr />
+<h4 id="criterios-de-aceptacion_1">✅ Criterios de Aceptación</h4>
+<ul>
+<li>[ ] El usuario puede visualizar sus datos públicos: razón social o nombre comercial, ubicación general y reputación.</li>
+<li>[ ] Los datos privados (correo electrónico, teléfono, CUIT, nombre del responsable) solo son visibles para el usuario y el sistema.</li>
+<li>[ ] El perfil permite visualizar el historial de compras, ventas y calificaciones.</li>
+<li>[ ] El usuario puede subir un logo de su empresa, agregar un sitio web y seleccionar un rubro comercial.</li>
+<li>[ ] El tipo de usuario se muestra claramente en el perfil (Vendedor Empresa, Comprador Particular, Comprador Empresa).</li>
+<li>[ ] Otros usuarios pueden consultar datos públicos del perfil en contextos como productos, empresas o historial.</li>
+<li>[ ] La edición de datos privados solo puede hacerse desde un área segura del perfil (requiere sesión iniciada).</li>
+</ul>
+<hr />
+<h4 id="definition-of-done-dod_1">🧪 Definition of Done (DoD)</h4>
+<ul>
+<li>[ ] Visualización y separación correcta entre datos públicos y privados.</li>
+<li>[ ] Pruebas de visibilidad según tipo de usuario y rol.</li>
+<li>[ ] Flujo completo de edición probado (con campos obligatorios y validaciones).</li>
+<li>[ ] Subida de imágenes (logo) validada en entorno QA.</li>
+<li>[ ] Pruebas de seguridad para prevenir acceso no autorizado a datos privados.</li>
+<li>[ ] Validación cruzada de historial de actividad con base de datos.</li>
+<li>[ ] Historia aprobada por QA y Product Owner.</li>
+</ul>
+<hr />
+<h3 id="hu-011-inicio-de-sesion-y-seguridad">🧾 HU-011 – Inicio de Sesión y Seguridad</h3>
+<p><strong>Historia de Usuario:</strong><br />
+Como usuario registrado, quiero poder iniciar sesión de forma segura utilizando mi correo electrónico y contraseña, con medidas de protección como reCAPTCHA y autenticación de dos factores, y tener la opción de recuperar el acceso si olvido mi contraseña.</p>
+<hr />
+<h4 id="criterios-de-aceptacion_2">✅ Criterios de Aceptación</h4>
+<ul>
+<li>[ ] El usuario puede iniciar sesión con correo electrónico y contraseña válidos.</li>
+<li>[ ] El formulario de inicio de sesión incluye reCAPTCHA para bloquear intentos automatizados.</li>
+<li>[ ] Si el usuario tiene 2FA activado, el sistema envía un código de verificación por correo electrónico luego de ingresar las credenciales correctas.</li>
+<li>[ ] El usuario no puede acceder a su cuenta sin ingresar correctamente el código 2FA.</li>
+<li>[ ] El formulario incluye la opción “¿Olvidaste tu contraseña?”.</li>
+<li>[ ] Al solicitar recuperación, el usuario recibe un correo con un enlace seguro.</li>
+<li>[ ] El enlace lleva a una pantalla protegida donde el usuario puede establecer una nueva contraseña.</li>
+<li>[ ] El sistema valida que el correo esté previamente verificado antes de permitir la recuperación.</li>
+</ul>
+<hr />
+<h4 id="definition-of-done-dod_2">🧪 Definition of Done (DoD)</h4>
+<ul>
+<li>[ ] Pruebas funcionales realizadas con y sin 2FA.</li>
+<li>[ ] Validación del envío de correos (2FA y recuperación) en entorno QA.</li>
+<li>[ ] Pruebas de seguridad con reCAPTCHA correctamente implementado.</li>
+<li>[ ] Pruebas de flujo completo de recuperación de contraseña.</li>
+<li>[ ] Validación del bloqueo de acceso si el código 2FA no es ingresado.</li>
+<li>[ ] No existen bugs críticos abiertos relacionados al login.</li>
+<li>[ ] La funcionalidad fue validada por QA y aprobada por el Product Owner.</li>
+</ul>
+<hr />
+<h3 id="hu-007-registro-y-creacion-de-cuenta">🧾 HU-007 – Registro y Creación de Cuenta</h3>
+<p><strong>Historia de Usuario:</strong><br />
+Como nuevo usuario, quiero poder registrarme fácilmente en la plataforma mediante correo electrónico o cuenta de Google, y validar mi identidad si soy una empresa, para comenzar a utilizar los servicios de manera segura.</p>
+<hr />
+<h4 id="criterios-de-aceptacion_3">✅ Criterios de Aceptación</h4>
+<ul>
+<li>[ ] El usuario puede registrarse con un correo electrónico y una contraseña.</li>
+<li>[ ] Tras el registro, el usuario recibe un correo con un enlace de confirmación de cuenta.</li>
+<li>[ ] El usuario tiene la opción de registrarse mediante cuenta de Google usando OAuth.</li>
+<li>[ ] Si el usuario se registra como empresa, debe completar los siguientes datos:</li>
+<li>[ ] CUIT</li>
+<li>[ ] Razón social</li>
+<li>[ ] Nombre del representante legal</li>
+<li>[ ] Subida de comprobante de inscripción AFIP o constancia de monotributo/responsable inscripto</li>
+<li>[ ] Si el usuario se registra como comprador particular, la validación de identidad es opcional.</li>
+<li>[ ] Todos los usuarios deben aceptar los Términos y Condiciones y la Política de Privacidad antes de enviar el formulario.</li>
+<li>[ ] El sistema valida todos los campos obligatorios antes de permitir el envío del formulario.</li>
+</ul>
+<hr />
+<h4 id="definition-of-done-dod_3">🧪 Definition of Done (DoD)</h4>
+<ul>
+<li>[ ] Historia validada por el equipo de QA y aprobada por el PO.</li>
+<li>[ ] El flujo de registro fue probado con email y OAuth.</li>
+<li>[ ] Se validó la carga y validación de documentos para empresas.</li>
+<li>[ ] Se probaron los errores de validación por campos incompletos.</li>
+<li>[ ] Se validó la persistencia de datos y envío de correo de confirmación.</li>
+<li>[ ] No existen errores bloqueantes ni de alta severidad abiertos.</li>
+<li>[ ] La historia fue desplegada correctamente en entorno QA y verificada.</li>
+</ul>
+<hr />
+<h3 id="hu-001-agregar-productos-a-favoritos">🧾 HU-001 – Agregar productos a favoritos</h3>
+<p><strong>Historia de Usuario:</strong><br />
+Como usuario común, quiero poder agregar productos a una lista de favoritos para guardarlos y comprarlos más tarde.</p>
+<hr />
+<h4 id="criterios-de-aceptacion_4">✅ Criterios de Aceptación</h4>
+<ul>
+<li>[ ] El usuario puede agregar productos a favoritos haciendo clic en el ícono de corazón en la tarjeta del producto.</li>
+<li>[ ] El usuario puede quitar productos de favoritos haciendo clic nuevamente en el corazón.</li>
+<li>[ ] Los productos favoritos son accesibles desde el perfil del usuario.</li>
+<li>[ ] El menú desplegable en el ícono de corazón del navbar muestra los últimos 5 productos favoritos agregados.</li>
+<li>[ ] Al hacer clic en “Ver más”, el usuario es dirigido a la página completa de favoritos.</li>
+<li>[ ] Los productos agregados se guardan en la base de datos del usuario para mantenerlos disponibles en diferentes sesiones o dispositivos.</li>
+</ul>
+<hr />
+<h4 id="definition-of-done-dod_4">🧪 Definition of Done (DoD)</h4>
+<ul>
+<li>[ ] Todos los criterios de aceptación fueron validados por QA y PO.</li>
+<li>[ ] Se ejecutaron pruebas funcionales en desktop y mobile.</li>
+<li>[ ] Se validó la persistencia de datos en base de datos.</li>
+<li>[ ] Se incluyeron pruebas de regresión para agregar/quitar favoritos.</li>
+<li>[ ] No existen errores abiertos en estado “Alta” o superior relacionados a favoritos.</li>
+<li>[ ] La funcionalidad fue desplegada en el entorno QA y validada.</li>
+</ul>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "search.highlight", "search.share"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>

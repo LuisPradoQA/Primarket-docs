@@ -1,6 +1,5 @@
 site_name: TestPlan Documentation
-nav:
-  - Home: index.md
+
 theme:
   name: material
   palette:
@@ -15,6 +14,7 @@ theme:
 
 nav:
   - Inicio: index.md
+  - Criterios de Aceptación (S0): criterios_sprint0.md
 
 plugins:
   - search

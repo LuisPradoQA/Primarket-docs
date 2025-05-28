@@ -146,4 +146,4 @@ Campos opcionales: versión, navegador, ambiente.
 
 ---
 
-🔚 *Fin del Test Plan – PRIMARKET v1.0*
+*Fin del Test Plan – PRIMARKET v1.0*
