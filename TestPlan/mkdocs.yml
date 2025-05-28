@@ -14,7 +14,7 @@ theme:
 
 nav:
   - Inicio: index.md
-  - Criterios de Aceptación (S0): criterios_sprint0.md
+  - Criterios de Aceptación S0: criterios_sprint0.md
 
 plugins:
   - search
