@@ -9,151 +9,15 @@ Los criterios de aceptación están redactados de forma clara, objetiva y verifi
 Cada entrada incluye:
 
 - 🧾 La historia de usuario correspondiente.
+
 - ✅ Criterios de aceptación (funcionales y técnicos).
+
 - 🧪 Definition of Done (DoD): checklist mínimo de calidad y entregables.
+---
 
 Este documento sirve como **base para el diseño de casos de prueba**, revisión de historias, seguimiento de avances y validación previa al cierre de cada tarea.
 
 ---
-
-
-
-### 🧾 HU-005 – Publicación de Productos
-
-**Historia de Usuario:**  
-Como usuario vendedor, quiero poder publicar productos en la plataforma completando todos los datos necesarios, subiendo imágenes y archivos técnicos, y estableciendo las condiciones de entrega, para que mis productos sean visibles y confiables para los potenciales compradores.
-
----
-
-#### ✅ Criterios de Aceptación
-
-- [ ] El formulario de publicación incluye campos obligatorios: título, categoría, estado del producto, unidad de venta, precio y descripción técnica.
-- [ ] El usuario puede subir entre 1 y 10 imágenes por producto (formatos admitidos: JPG, PNG).
-- [ ] Se debe indicar la ubicación del producto (localidad y provincia).
-- [ ] El usuario puede seleccionar condiciones de entrega: retiro en domicilio, logística propia o envío acordado con el comprador.
-- [ ] El usuario puede adjuntar una ficha técnica en formato PDF o como imagen adicional.
-- [ ] Toda publicación pasa por una revisión automática (validaciones básicas).
-- [ ] Luego se aplica una moderación manual antes de que el producto sea visible públicamente.
-- [ ] El usuario recibe una notificación si su publicación es aprobada, rechazada o requiere cambios.
-
----
-
-#### 🧪 Definition of Done (DoD)
-
-- [ ] Validación completa del formulario de publicación con campos obligatorios y formatos admitidos.
-- [ ] Subida y visualización de imágenes correctamente testeada en distintos navegadores.
-- [ ] Se probaron las tres opciones de entrega en el frontend y backend.
-- [ ] Validación de archivo técnico adjunto (PDF o imagen).
-- [ ] Simulación de estados de publicación (en revisión, rechazada, publicada).
-- [ ] Pruebas de notificaciones (visualización o envío por email).
-- [ ] Historia verificada por QA en entorno QA y validada por PO.
-
----
-
-
-
-### 🧾 HU-010 – Perfil del Usuario
-
-**Historia de Usuario:**  
-Como usuario de la plataforma, quiero tener un perfil donde pueda gestionar mi información personal y comercial, visualizar mi historial de actividad y mostrar ciertos datos públicos que refuercen mi reputación y credibilidad en la comunidad.
-
----
-
-#### ✅ Criterios de Aceptación
-
-- [ ] El usuario puede visualizar sus datos públicos: razón social o nombre comercial, ubicación general y reputación.
-- [ ] Los datos privados (correo electrónico, teléfono, CUIT, nombre del responsable) solo son visibles para el usuario y el sistema.
-- [ ] El perfil permite visualizar el historial de compras, ventas y calificaciones.
-- [ ] El usuario puede subir un logo de su empresa, agregar un sitio web y seleccionar un rubro comercial.
-- [ ] El tipo de usuario se muestra claramente en el perfil (Vendedor Empresa, Comprador Particular, Comprador Empresa).
-- [ ] Otros usuarios pueden consultar datos públicos del perfil en contextos como productos, empresas o historial.
-- [ ] La edición de datos privados solo puede hacerse desde un área segura del perfil (requiere sesión iniciada).
-
----
-
-#### 🧪 Definition of Done (DoD)
-
-- [ ] Visualización y separación correcta entre datos públicos y privados.
-- [ ] Pruebas de visibilidad según tipo de usuario y rol.
-- [ ] Flujo completo de edición probado (con campos obligatorios y validaciones).
-- [ ] Subida de imágenes (logo) validada en entorno QA.
-- [ ] Pruebas de seguridad para prevenir acceso no autorizado a datos privados.
-- [ ] Validación cruzada de historial de actividad con base de datos.
-- [ ] Historia aprobada por QA y PO.
-
----
-
-
-
-### 🧾 HU-011 – Inicio de Sesión y Seguridad
-
-**Historia de Usuario:**  
-Como usuario registrado, quiero poder iniciar sesión de forma segura utilizando mi correo electrónico y contraseña, con medidas de protección como reCAPTCHA y autenticación de dos factores, y tener la opción de recuperar el acceso si olvido mi contraseña.
-
----
-
-#### ✅ Criterios de Aceptación
-
-- [ ] El usuario puede iniciar sesión con correo electrónico y contraseña válidos.
-- [ ] El formulario de inicio de sesión incluye reCAPTCHA para bloquear intentos automatizados.
-- [ ] Si el usuario tiene 2FA activado, el sistema envía un código de verificación por correo electrónico luego de ingresar las credenciales correctas.
-- [ ] El usuario no puede acceder a su cuenta sin ingresar correctamente el código 2FA.
-- [ ] El formulario incluye la opción “¿Olvidaste tu contraseña?”.
-- [ ] Al solicitar recuperación, el usuario recibe un correo con un enlace seguro.
-- [ ] El enlace lleva a una pantalla protegida donde el usuario puede establecer una nueva contraseña.
-- [ ] El sistema valida que el correo esté previamente verificado antes de permitir la recuperación.
-
----
-
-#### 🧪 Definition of Done (DoD)
-
-- [ ] Pruebas funcionales realizadas con y sin 2FA.
-- [ ] Validación del envío de correos (2FA y recuperación) en entorno QA.
-- [ ] Pruebas de seguridad con reCAPTCHA correctamente implementado.
-- [ ] Pruebas de flujo completo de recuperación de contraseña.
-- [ ] Validación del bloqueo de acceso si el código 2FA no es ingresado.
-- [ ] No existen bugs críticos abiertos relacionados al login.
-- [ ] La funcionalidad fue validada por QA y aprobada por el PO.
-
----
-
-
-
-### 🧾 HU-007 – Registro y Creación de Cuenta
-
-**Historia de Usuario:**  
-Como nuevo usuario, quiero poder registrarme fácilmente en la plataforma mediante correo electrónico o cuenta de Google, y validar mi identidad si soy una empresa, para comenzar a utilizar los servicios de manera segura.
-
----
-
-#### ✅ Criterios de Aceptación
-
-- [ ] El usuario puede registrarse con un correo electrónico y una contraseña.
-- [ ] Tras el registro, el usuario recibe un correo con un enlace de confirmación de cuenta.
-- [ ] El usuario tiene la opción de registrarse mediante cuenta de Google usando OAuth.
-- [ ] Si el usuario se registra como empresa, debe completar los siguientes datos:
-  - [ ] CUIT
-  - [ ] Razón social
-  - [ ] Nombre del representante legal
-  - [ ] Subida de comprobante de inscripción AFIP o constancia de monotributo/responsable inscripto
-- [ ] Si el usuario se registra como comprador particular, la validación de identidad es opcional.
-- [ ] Todos los usuarios deben aceptar los Términos y Condiciones y la Política de Privacidad antes de enviar el formulario.
-- [ ] El sistema valida todos los campos obligatorios antes de permitir el envío del formulario.
-
----
-
-#### 🧪 Definition of Done (DoD)
-
-- [ ] Historia validada por el equipo de QA y aprobada por el PO.
-- [ ] El flujo de registro fue probado con email y OAuth.
-- [ ] Se validó la carga y validación de documentos para empresas.
-- [ ] Se probaron los errores de validación por campos incompletos.
-- [ ] Se validó la persistencia de datos y envío de correo de confirmación.
-- [ ] No existen errores bloqueantes ni de alta severidad abiertos.
-- [ ] La historia fue desplegada correctamente en entorno QA y verificada.
-
----
-
 
 
 ### 🧾 HU-001 – Agregar productos a favoritos
@@ -243,6 +107,37 @@ Como plataforma, quiero contar con mecanismos de seguridad y prevención de frau
 
 ---
 
+### 🧾 HU-005 – Publicación de Productos
+
+**Historia de Usuario:**  
+Como usuario vendedor, quiero poder publicar productos en la plataforma completando todos los datos necesarios, subiendo imágenes y archivos técnicos, y estableciendo las condiciones de entrega, para que mis productos sean visibles y confiables para los potenciales compradores.
+
+---
+
+#### ✅ Criterios de Aceptación
+
+- [ ] El formulario de publicación incluye campos obligatorios: título, categoría, estado del producto, unidad de venta, precio y descripción técnica.
+- [ ] El usuario puede subir entre 1 y 10 imágenes por producto (formatos admitidos: JPG, PNG).
+- [ ] Se debe indicar la ubicación del producto (localidad y provincia).
+- [ ] El usuario puede seleccionar condiciones de entrega: retiro en domicilio, logística propia o envío acordado con el comprador.
+- [ ] El usuario puede adjuntar una ficha técnica en formato PDF o como imagen adicional.
+- [ ] Toda publicación pasa por una revisión automática (validaciones básicas).
+- [ ] Luego se aplica una moderación manual antes de que el producto sea visible públicamente.
+- [ ] El usuario recibe una notificación si su publicación es aprobada, rechazada o requiere cambios.
+
+---
+
+#### 🧪 Definition of Done (DoD)
+
+- [ ] Validación completa del formulario de publicación con campos obligatorios y formatos admitidos.
+- [ ] Subida y visualización de imágenes correctamente testeada en distintos navegadores.
+- [ ] Se probaron las tres opciones de entrega en el frontend y backend.
+- [ ] Validación de archivo técnico adjunto (PDF o imagen).
+- [ ] Simulación de estados de publicación (en revisión, rechazada, publicada).
+- [ ] Pruebas de notificaciones (visualización o envío por email).
+- [ ] Historia verificada por QA en entorno QA y validada por PO.
+
+---
 
 
 ### 🧾 HU-006 – Calificación y Reputación
@@ -275,6 +170,41 @@ Como usuario de la plataforma, quiero poder calificar las operaciones realizadas
 
 ---
 
+
+### 🧾 HU-007 – Registro y Creación de Cuenta
+
+**Historia de Usuario:**  
+Como nuevo usuario, quiero poder registrarme fácilmente en la plataforma mediante correo electrónico o cuenta de Google, y validar mi identidad si soy una empresa, para comenzar a utilizar los servicios de manera segura.
+
+---
+
+#### ✅ Criterios de Aceptación
+
+- [ ] El usuario puede registrarse con un correo electrónico y una contraseña.
+- [ ] Tras el registro, el usuario recibe un correo con un enlace de confirmación de cuenta.
+- [ ] El usuario tiene la opción de registrarse mediante cuenta de Google usando OAuth.
+- [ ] Si el usuario se registra como empresa, debe completar los siguientes datos:
+  - [ ] CUIT
+  - [ ] Razón social
+  - [ ] Nombre del representante legal
+  - [ ] Subida de comprobante de inscripción AFIP o constancia de monotributo/responsable inscripto
+- [ ] Si el usuario se registra como comprador particular, la validación de identidad es opcional.
+- [ ] Todos los usuarios deben aceptar los Términos y Condiciones y la Política de Privacidad antes de enviar el formulario.
+- [ ] El sistema valida todos los campos obligatorios antes de permitir el envío del formulario.
+
+---
+
+#### 🧪 Definition of Done (DoD)
+
+- [ ] Historia validada por el equipo de QA y aprobada por el PO.
+- [ ] El flujo de registro fue probado con email y OAuth.
+- [ ] Se validó la carga y validación de documentos para empresas.
+- [ ] Se probaron los errores de validación por campos incompletos.
+- [ ] Se validó la persistencia de datos y envío de correo de confirmación.
+- [ ] No existen errores bloqueantes ni de alta severidad abiertos.
+- [ ] La historia fue desplegada correctamente en entorno QA y verificada.
+
+---
 
 
 ### 🧾 HU-008 – Proceso de Compra 
@@ -347,4 +277,70 @@ Como usuario comprador, quiero poder buscar productos fácilmente mediante palab
 - [ ] Se valida el rendimiento del sistema de búsqueda (respuestas rápidas, sin recarga completa).
 - [ ] Se asegura la compatibilidad con dispositivos móviles y accesibilidad
 - [ ] Se validó que los filtros no rompen la navegación ni generan inconsistencias en los resultados
+
+---
+
+
+### 🧾 HU-010 – Perfil del Usuario
+
+**Historia de Usuario:**  
+Como usuario de la plataforma, quiero tener un perfil donde pueda gestionar mi información personal y comercial, visualizar mi historial de actividad y mostrar ciertos datos públicos que refuercen mi reputación y credibilidad en la comunidad.
+
+---
+
+#### ✅ Criterios de Aceptación
+
+- [ ] El usuario puede visualizar sus datos públicos: razón social o nombre comercial, ubicación general y reputación.
+- [ ] Los datos privados (correo electrónico, teléfono, CUIT, nombre del responsable) solo son visibles para el usuario y el sistema.
+- [ ] El perfil permite visualizar el historial de compras, ventas y calificaciones.
+- [ ] El usuario puede subir un logo de su empresa, agregar un sitio web y seleccionar un rubro comercial.
+- [ ] El tipo de usuario se muestra claramente en el perfil (Vendedor Empresa, Comprador Particular, Comprador Empresa).
+- [ ] Otros usuarios pueden consultar datos públicos del perfil en contextos como productos, empresas o historial.
+- [ ] La edición de datos privados solo puede hacerse desde un área segura del perfil (requiere sesión iniciada).
+
+---
+
+#### 🧪 Definition of Done (DoD)
+
+- [ ] Visualización y separación correcta entre datos públicos y privados.
+- [ ] Pruebas de visibilidad según tipo de usuario y rol.
+- [ ] Flujo completo de edición probado (con campos obligatorios y validaciones).
+- [ ] Subida de imágenes (logo) validada en entorno QA.
+- [ ] Pruebas de seguridad para prevenir acceso no autorizado a datos privados.
+- [ ] Validación cruzada de historial de actividad con base de datos.
+- [ ] Historia aprobada por QA y PO.
+
+---
+
+
+### 🧾 HU-011 – Inicio de Sesión y Seguridad
+
+**Historia de Usuario:**  
+Como usuario registrado, quiero poder iniciar sesión de forma segura utilizando mi correo electrónico y contraseña, con medidas de protección como reCAPTCHA y autenticación de dos factores, y tener la opción de recuperar el acceso si olvido mi contraseña.
+
+---
+
+#### ✅ Criterios de Aceptación
+
+- [ ] El usuario puede iniciar sesión con correo electrónico y contraseña válidos.
+- [ ] El formulario de inicio de sesión incluye reCAPTCHA para bloquear intentos automatizados.
+- [ ] Si el usuario tiene 2FA activado, el sistema envía un código de verificación por correo electrónico luego de ingresar las credenciales correctas.
+- [ ] El usuario no puede acceder a su cuenta sin ingresar correctamente el código 2FA.
+- [ ] El formulario incluye la opción “¿Olvidaste tu contraseña?”.
+- [ ] Al solicitar recuperación, el usuario recibe un correo con un enlace seguro.
+- [ ] El enlace lleva a una pantalla protegida donde el usuario puede establecer una nueva contraseña.
+- [ ] El sistema valida que el correo esté previamente verificado antes de permitir la recuperación.
+
+
+#### 🧪 Definition of Done (DoD)
+
+- [ ] Pruebas funcionales realizadas con y sin 2FA.
+- [ ] Validación del envío de correos (2FA y recuperación) en entorno QA.
+- [ ] Pruebas de seguridad con reCAPTCHA correctamente implementado.
+- [ ] Pruebas de flujo completo de recuperación de contraseña.
+- [ ] Validación del bloqueo de acceso si el código 2FA no es ingresado.
+- [ ] No existen bugs críticos abiertos relacionados al login.
+- [ ] La funcionalidad fue validada por QA y aprobada por el PO.
+
+---
 
