@@ -7,6 +7,7 @@ theme:
     primary: indigo
     accent: indigo
   language: es
+  favicon: favicon.png
   features:
     - navigation.instant
     - search.highlight
