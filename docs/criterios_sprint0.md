@@ -40,12 +40,12 @@ Como usuario común, quiero poder agregar productos a una lista de favoritos par
 
 #### 🧪 Definition of Done (DoD)
 
-- [ ] Todos los criterios de aceptación fueron validados por QA y PO.
 - [ ] Se ejecutaron pruebas funcionales en desktop y mobile.
 - [ ] Se validó la persistencia de datos en base de datos.
 - [ ] Se incluyeron pruebas de regresión para agregar/quitar favoritos.
 - [ ] No existen errores abiertos en estado “Alta” o superior relacionados a favoritos.
 - [ ] La funcionalidad fue desplegada en el entorno QA y validada.
+- [ ] Todos los criterios de aceptación fueron validados por QA y PO.
 
 ---
 
@@ -68,12 +68,12 @@ Como administrador de la plataforma, quiero acceder a un panel de administració
 ---
 
 ### 🧪 Definition of Done (DoD)
-- [ ] Historia validada por el equipo de QA y aprobada por el PO.
 - [ ] El administrador puede iniciar sesión en el panel utilizando credenciales exclusivas de administrador.
 - [ ] El sistema valida correctamente las credenciales y maneja errores de autenticación (credenciales incorrectas, cuenta bloqueada, etc.).
-- [ ] Código revisado y aprobado por al menos otro miembro del equipo
+- [ ] Código revisado y aprobado por al menos otro miembro del equipo.
 - [ ] Se ha probado en los navegadores/entornos definidos como soporte mínimo.
-- [ ] Seguridad validada: no hay fugas de información, validación del lado del servidor
+- [ ] Seguridad validada: no hay fugas de información, validación del lado del servidor.
+- [ ] Historia validada por el equipo de QA y aprobada por el PO.
 
 ---
 
@@ -101,7 +101,7 @@ Como plataforma, quiero contar con mecanismos de seguridad y prevención de frau
 - [ ] El sistema muestra advertencias claras y visibles al usuario indicando que no está permitido realizar transacciones fuera de la plataforma.
 - [ ] La interfaz de reporte es accesible, intuitiva y permite describir el motivo del reporte.
 - [ ] El contenido que coincide con estos criterios se etiqueta como sospechoso y puede ser: Ser bloqueado automáticamente, Generar un aviso al usuario o Activar un flujo de revisión manual.
-- [ ] Se implementaron pruebas unitarias y de integración
+- [ ] Se implementaron pruebas unitarias y de integración.
 - [ ] Cumple con estándares de accesibilidad y usabilidad.
 - [ ] Se habilitan canales de soporte accesibles desde el perfil y desde el menú principal.
 
@@ -159,7 +159,6 @@ Como usuario de la plataforma, quiero poder calificar las operaciones realizadas
 ---
 
 ### 🧪 Definition of Done (DoD)
-- [ ] Historia validada por el equipo de QA y aprobada por el PO.
 - [ ] Al finalizar una transacción confirmada, tanto el comprador como el vendedor pueden calificar al otro usuario con un puntaje de 1 a 5 estrellas.
 - [ ] El sistema valida que la calificación solo esté habilitada una vez que la operación esté marcada como finalizada.
 - [ ] Cada perfil de usuario muestra públicamente su reputación promedio basada en todas las calificaciones recibidas.
@@ -167,6 +166,7 @@ Como usuario de la plataforma, quiero poder calificar las operaciones realizadas
 - [ ] Se implementa un sistema de moderación automática de comentarios ofensivos o inapropiados (mediante listas negras, detección de lenguaje, etc.).
 - [ ] Los comentarios potencialmente ofensivos se bloquean, ocultan o se derivan a moderación manual.
 - [ ] La visualización pública de reputación y comentarios es responsiva y accesible.
+- [ ] Historia validada por el equipo de QA y aprobada por el PO.
 
 ---
 
@@ -215,7 +215,7 @@ Como comprador, quiero poder comunicarme con el vendedor dentro de la plataforma
 ---
 
 ### ✅ Criterios de Aceptación
-- [ ] El comprador debe poder iniciar una conversación con el vendedor desde la página del producto o desde su perfil
+- [ ] El comprador debe poder iniciar una conversación con el vendedor desde la página del producto o desde su perfil.
 - [ ] Debe existir un chat interno para la comunicación entre ambas partes.
 - [ ] El comprador debe poder solicitar una cotización especial para grandes volúmenes.
 - [ ] La plataforma debe gestionar el pago en modalidad escrow y liberarlo una vez que el comprador confirme la entrega.
@@ -226,17 +226,17 @@ Como comprador, quiero poder comunicarme con el vendedor dentro de la plataforma
 ---
 
 ### 🧪 Definition of Done (DoD)
-- [ ] Historia validada por el equipo de QA y aprobada por el PO.
-- [ ] El comprador puede iniciar una conversación desde: La página del producto y el perfil del vendedor
-- [ ] Existe un chat interno funcional con: Mensajería en tiempo real o con actualización dinámica, historial accesible, identificación clara de roles (comprador/vendedor) y soporte para mensajes de texto, enlaces y solicitudes de cotización
+- [ ] El comprador puede iniciar una conversación desde: La página del producto y el perfil del vendedor.
+- [ ] Existe un chat interno funcional con: Mensajería en tiempo real o con actualización dinámica, historial accesible, identificación clara de roles (comprador/vendedor) y soporte para mensajes de texto, enlaces y solicitudes de cotización.
 - [ ] El vendedor puede responder con una cotización ajustada.
-- [ ] El sistema permite al comprador marcar la operación como "entrega confirmada"
+- [ ] El sistema permite al comprador marcar la operación como "entrega confirmada".
 - [ ] Solo tras la confirmación se libera el pago al vendedor.
 - [ ] El sistema permite subir o generar factura electrónica tipo A o B según corresponda (definido por tipo de usuario o CUIT).
 - [ ] La aceptación de las condiciones queda registrada como parte de la operación.
 - [ ] La factura está disponible para ambas partes desde el resumen de operación.
 - [ ] Se validan los datos fiscales requeridos antes de generar el comprobante.
-- [ ] Interfaz validada para accesibilidad y experiencia de usuario
+- [ ] Interfaz validada para accesibilidad y experiencia de usuario.
+- [ ] Historia validada por el equipo de QA y aprobada por el PO.
 
 ---
 
@@ -259,7 +259,6 @@ Como usuario comprador, quiero poder buscar productos fácilmente mediante palab
 ---
 
 ### 🧪 Definition of Done (DoD)
-- [ ] Historia validada por el equipo de QA y aprobada por el PO.
 - [ ] Existe un campo de búsqueda accesible y visible en la interfaz principal.
 - [ ] El usuario puede ingresar palabras clave para buscar productos.
 - [ ] El sistema muestra resultados relevantes al presionar "Enter" o en tiempo real (autosuggest o autocompletado si aplica).
@@ -275,8 +274,9 @@ Como usuario comprador, quiero poder buscar productos fácilmente mediante palab
 - [ ] Si la búsqueda no arroja coincidencias, se muestra un mensaje claro y empático como:
 “No se encontraron productos para tu búsqueda. Intenta modificar los filtros o palabras clave.”
 - [ ] Se valida el rendimiento del sistema de búsqueda (respuestas rápidas, sin recarga completa).
-- [ ] Se asegura la compatibilidad con dispositivos móviles y accesibilidad
-- [ ] Se validó que los filtros no rompen la navegación ni generan inconsistencias en los resultados
+- [ ] Se asegura la compatibilidad con dispositivos móviles y accesibilidad.
+- [ ] Se validó que los filtros no rompen la navegación ni generan inconsistencias en los resultados.
+- [ ] Historia validada por el equipo de QA y aprobada por el PO.
 
 ---
 
