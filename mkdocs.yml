@@ -1,4 +1,4 @@
-site_name: TestPlan Documentation
+site_name: Documentación QA | Proyecto Primarket  
 
 theme:
   name: material
@@ -11,10 +11,28 @@ theme:
     - navigation.instant
     - search.highlight
     - search.share
-
+    
 nav:
   - Inicio: index.md
-  - Criterios de Aceptación S0: criterios_sprint0.md
-
+  - Plan de Pruebas: test_plan.md
+  - Criterios de Aceptación:
+      - Sprint 0: criterios_sprint0.md
+      - Sprint 1: criterios_sprint1.md
+      - Sprint 2: criterios_sprint2.md
+  - Casos de Prueba:
+      - Diseño: casos_prueba.md
+      - Ejecución: ejecucion_casos.md
+  - Reportes:
+      - Bugs: reporte_bugs.md
+      - Informe Final: informe_testing_final.md
+  - Herramientas y Setup: herramientas_entorno.md
+  - Glosario Funcional & QA: glosario.md
+  - Métricas y Cobertura: metricas_cobertura.md
+  - Integraciones:
+      - Cypress: cypress_tests.md
+      - Postman: postman_collections.md
+      - JMeter: jmeter_tests.md
+  - Flujos y Videos: videos_flujos.md
+  - FAQ Nuevos Testers: faq_onboarding.md
 plugins:
   - search

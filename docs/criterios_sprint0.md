@@ -1,4 +1,4 @@
-# 📋 Criterios de Aceptación – Sprint 0
+# Criterios de Aceptación – Sprint 0
 
 ## Introducción
 
