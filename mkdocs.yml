@@ -26,6 +26,7 @@ nav:
   - Reportes:
       - Bugs: reporte_bugs.md
       - Informe Final: informe_testing_final.md
+      - Ciclo de Vida del Bug: ciclo_vida_bug.md
   - Herramientas y Setup: herramientas_entorno.md
   - Glosario Funcional & QA: glosario.md
   - Métricas y Cobertura: metricas_cobertura.md
