@@ -53,3 +53,38 @@ Este documento describe el flujo completo para la gestión de un reporte de erro
 
 ---
 
+# 🐞 Reporte de Bug
+
+## 📝 Título 
+<-- Breve resumen del problema -->
+
+## 📋 Descripción 
+<-- Explicá detalladamente el problema encontrado -->
+
+## ▶️ Pasos para reproducir 
+1. 
+2. 
+3. 
+
+## ✅ Resultado esperado 
+<-- Qué esperabas que sucediera -->
+
+## ❌ Resultado actual 
+<-- Qué ocurrió realmente -->
+
+## 🖥️ Entorno 
+- Sistema operativo: 
+- Navegador y versión: 
+- Versión de la aplicación: 
+
+## ⚠️ Severidad / Prioridad 
+<-- Ejemplo: Crítico, Alto, Medio, Bajo -->
+
+## 📷 Evidencia 
+<-- Capturas de pantalla, videos, logs, enlaces, etc. -->
+
+## 📅 Fecha y hora del reporte 
+<-- Opcional -->
+
+## 🙋‍♂️ Reportado por 
+<-- Nombre o usuario -->
