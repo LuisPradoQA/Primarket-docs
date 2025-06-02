@@ -13,6 +13,7 @@ Cada entrada incluye:
 - ✅ Criterios de aceptación (funcionales y técnicos).
 
 - 🧪 Definition of Done (DoD): checklist mínimo de calidad y entregables.
+
 ---
 
 Este documento sirve como **base para el diseño de casos de prueba**, revisión de historias, seguimiento de avances y validación previa al cierre de cada tarea.
