@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../informe_testing_final/">
       
       
-        <link rel="next" href="../criterios_sprint0/">
+        <link rel="next" href="../herramientas_entorno/">
       
       
       <link rel="icon" href="../favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Plan de Pruebas - Documentación QA | Proyecto Primarket</title>
+        <title>Ciclo de Vida del Bug - Documentación QA | Proyecto Primarket</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#test-plan-proyecto-primarket" class="md-skip">
+        <a href="#ciclo-de-vida-de-un-bug" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Plan de Pruebas
+              Ciclo de Vida del Bug
             
           </span>
         </div>
@@ -226,32 +226,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Plan de Pruebas
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../test_plan/" class="md-nav__link">
         
   
   
@@ -262,206 +240,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-introduccion" class="md-nav__link">
-    <span class="md-ellipsis">
-      1. Introducción
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1. Introducción">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#11-objetivo-del-plan-de-pruebas" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.1 Objetivo del Plan de Pruebas
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#12-documentos-relacionados" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.2 Documentos Relacionados
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-alcance-del-testing" class="md-nav__link">
-    <span class="md-ellipsis">
-      2. Alcance del Testing
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Alcance del Testing">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#21-requerimientos-de-pruebas-incluidos" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.1 Requerimientos de Pruebas Incluidos
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#22-requerimientos-excluidos" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.2 Requerimientos Excluidos
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#23-casos-de-prueba-incluidos" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.3 Casos de Prueba Incluidos
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#24-casos-de-prueba-excluidos" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.4 Casos de Prueba Excluidos
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#25-entorno-de-pruebas" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.5 Entorno de Pruebas
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-estrategia-de-las-pruebas" class="md-nav__link">
-    <span class="md-ellipsis">
-      3. Estrategia de las Pruebas
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. Estrategia de las Pruebas">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#31-configuracion" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.1 Configuración
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#32-orden-de-ejecucion" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.2 Orden de Ejecución
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#33-criterios-de-inicio" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.3 Criterios de Inicio
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#34-criterios-de-termino" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.4 Criterios de Término
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#35-equipos-y-responsabilidades" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.5 Equipos y Responsabilidades
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#36-gestion-de-incidencias" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.6 Gestión de Incidencias
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#37-plantilla-de-reporte-de-bugs" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.7 Plantilla de Reporte de Bugs
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-entregables" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Entregables
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -675,18 +453,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -702,7 +482,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Reportes
@@ -759,10 +539,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../ciclo_vida_bug/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Ciclo de Vida del Bug
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -773,6 +575,98 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-reporte-del-bug" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Reporte del Bug
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-revision-inicial" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Revisión Inicial
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-clasificacion-y-priorizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Clasificación y Priorización
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-desarrollo-y-correccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Desarrollo y Corrección
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-pruebas-de-validacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Pruebas de Validación
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-cierre-del-bug" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Cierre del Bug
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-reapertura-si-aplica" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Reapertura (si aplica)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recomendaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recomendaciones
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1036,180 +930,72 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-introduccion" class="md-nav__link">
+  <a href="#1-reporte-del-bug" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Introducción
+      1. Reporte del Bug
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="1. Introducción">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#11-objetivo-del-plan-de-pruebas" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.1 Objetivo del Plan de Pruebas
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#12-documentos-relacionados" class="md-nav__link">
-    <span class="md-ellipsis">
-      1.2 Documentos Relacionados
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-alcance-del-testing" class="md-nav__link">
+  <a href="#2-revision-inicial" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Alcance del Testing
+      2. Revisión Inicial
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="2. Alcance del Testing">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#21-requerimientos-de-pruebas-incluidos" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.1 Requerimientos de Pruebas Incluidos
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#22-requerimientos-excluidos" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.2 Requerimientos Excluidos
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#23-casos-de-prueba-incluidos" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.3 Casos de Prueba Incluidos
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#24-casos-de-prueba-excluidos" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.4 Casos de Prueba Excluidos
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#25-entorno-de-pruebas" class="md-nav__link">
-    <span class="md-ellipsis">
-      2.5 Entorno de Pruebas
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-estrategia-de-las-pruebas" class="md-nav__link">
+  <a href="#3-clasificacion-y-priorizacion" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Estrategia de las Pruebas
+      3. Clasificación y Priorización
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="3. Estrategia de las Pruebas">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#31-configuracion" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.1 Configuración
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#32-orden-de-ejecucion" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.2 Orden de Ejecución
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#33-criterios-de-inicio" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.3 Criterios de Inicio
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#34-criterios-de-termino" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.4 Criterios de Término
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#35-equipos-y-responsabilidades" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.5 Equipos y Responsabilidades
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#36-gestion-de-incidencias" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.6 Gestión de Incidencias
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#37-plantilla-de-reporte-de-bugs" class="md-nav__link">
-    <span class="md-ellipsis">
-      3.7 Plantilla de Reporte de Bugs
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-entregables" class="md-nav__link">
+  <a href="#4-desarrollo-y-correccion" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Entregables
+      4. Desarrollo y Corrección
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-pruebas-de-validacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Pruebas de Validación
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-cierre-del-bug" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Cierre del Bug
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-reapertura-si-aplica" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Reapertura (si aplica)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recomendaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recomendaciones
     </span>
   </a>
   
@@ -1231,272 +1017,86 @@
 
 
 
-<h1 id="test-plan-proyecto-primarket">Test Plan - Proyecto Primarket</h1>
-<p><strong>Versión:</strong> 1.0</p>
-<p><strong>Fecha:</strong> 21/08/2023</p>
-<p><strong>Responsable QA:</strong> Luis Prado - Mateo Sorichetti Vilá</p>
-<p><strong>Proyecto:</strong> Primarket (E-commerce B2B - fabricantes y proveedores)</p>
+<h1 id="ciclo-de-vida-de-un-bug">Ciclo de Vida de un Bug</h1>
+<p>Este documento describe el flujo completo para la gestión de un reporte de error (bug) desde su creación hasta su cierre, asegurando que cada problema sea correctamente registrado y gestionado.</p>
 <hr />
-<h2 id="1-introduccion">1. Introducción</h2>
-<h3 id="11-objetivo-del-plan-de-pruebas">1.1 Objetivo del Plan de Pruebas</h3>
-<p>Este plan de pruebas tiene como objetivo garantizar la calidad funcional, técnica y de experiencia del usuario en <strong>Primarket</strong>, una plataforma de comercio electrónico orientada a conectar fabricantes con proveedores de materia prima. Se realizará mediante una estrategia de testing integral que combine pruebas manuales, automatizadas y de rendimiento, alineadas con la metodología Scrum.</p>
-<h3 id="12-documentos-relacionados">1.2 Documentos Relacionados</h3>
-<table>
-<thead>
-<tr>
-<th>NOMBRE</th>
-<th>DESCRIPCIÓN</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Repositorio del proyecto</td>
-<td><a href="https://github.com/users/Visual2024/projects/4">GitHub</a></td>
-</tr>
-<tr>
-<td>Issue tracker</td>
-<td><a href="https://app.clickup.com/90131509380/v/l/2ky43c44-373?pr=90136315153">Clickup</a></td>
-</tr>
-<tr>
-<td>Casos de prueba</td>
-<td><a href="https://docs.google.com/spreadsheets/d/1R068pTAraD3TfT1cuLUsIXSZiYd_C6fGkctYw7fjdXE/edit?usp=share_link">PRIMARKET - Test Cases</a></td>
-</tr>
-</tbody>
-</table>
+<h2 id="1-reporte-del-bug">1. Reporte del Bug</h2>
+<ul>
+<li>El QA o usuario detecta un comportamiento inusual en la prueba.</li>
+<li>Se crea un reporte detallado en el sistema, siguiendo la plantilla de reporte (descripción, pasos para reproducir, entorno, etc.).</li>
+</ul>
 <hr />
-<h2 id="2-alcance-del-testing">2. Alcance del Testing</h2>
-<h3 id="21-requerimientos-de-pruebas-incluidos">2.1 Requerimientos de Pruebas Incluidos</h3>
-<table>
-<thead>
-<tr>
-<th>ID</th>
-<th>Módulo/Funcionalidad</th>
-<th>Descripción breve</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>F01</td>
-<td>Registro de proveedor</td>
-<td>Alta con validación de email y datos fiscales</td>
-</tr>
-<tr>
-<td>F02</td>
-<td>Publicación de materias primas</td>
-<td>Carga de insumos con disponibilidad y precio</td>
-</tr>
-<tr>
-<td>F03</td>
-<td>Catálogo del fabricante</td>
-<td>Visualización filtrada y búsqueda de proveedores</td>
-</tr>
-<tr>
-<td>F04</td>
-<td>Carrito de pedidos</td>
-<td>Selección, modificación y confirmación de pedidos</td>
-</tr>
-<tr>
-<td>F05</td>
-<td>Historial de transacciones</td>
-<td>Listado y estado de pedidos anteriores</td>
-</tr>
-</tbody>
-</table>
-<h3 id="22-requerimientos-excluidos">2.2 Requerimientos Excluidos</h3>
-<table>
-<thead>
-<tr>
-<th>Requerimiento</th>
-<th>Motivo</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Integraciones con ERPs externos</td>
-<td>Fuera del scope</td>
-</tr>
-<tr>
-<td>Validación legal o fiscal de documentos</td>
-<td>Fuera del scope</td>
-</tr>
-</tbody>
-</table>
-<h3 id="23-casos-de-prueba-incluidos">2.3 Casos de Prueba Incluidos</h3>
-<table>
-<thead>
-<tr>
-<th>ID</th>
-<th>TÍTULO</th>
-<th>ESTADO</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>TC-1</td>
-<td>Verificar login con credenciales válidas</td>
-<td>PASS</td>
-</tr>
-<tr>
-<td>TC-2</td>
-<td>Verificar login con credenciales inválidas</td>
-<td>FAIL</td>
-</tr>
-</tbody>
-</table>
-<h3 id="24-casos-de-prueba-excluidos">2.4 Casos de Prueba Excluidos</h3>
-<table>
-<thead>
-<tr>
-<th>ID</th>
-<th>TÍTULO</th>
-<th>ESTADO</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>TC-10</td>
-<td>Registro de cuentas</td>
-<td>N/A</td>
-</tr>
-<tr>
-<td>TC-11</td>
-<td>Registro de cuentas duplicadas</td>
-<td>N/A</td>
-</tr>
-<tr>
-<td>TC-12</td>
-<td>Recuperar contraseñas</td>
-<td>Deprecado</td>
-</tr>
-</tbody>
-</table>
-<h3 id="25-entorno-de-pruebas">2.5 Entorno de Pruebas</h3>
-<table>
-<thead>
-<tr>
-<th>Ambiente</th>
-<th>URL</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>QA</td>
-<td><a href="https://ambienteQA.com">https://ambienteQA.com</a></td>
-</tr>
-<tr>
-<td>Preprod</td>
-<td><a href="https://ambientepreprod.com">https://ambientepreprod.com</a></td>
-</tr>
-</tbody>
-</table>
+<h2 id="2-revision-inicial">2. Revisión Inicial</h2>
+<ul>
+<li>El equipo de QA revisa el reporte para validar que tenga la información necesaria.</li>
+<li>Si falta información, se solicita al reportante que complete el reporte.</li>
+</ul>
 <hr />
-<h2 id="3-estrategia-de-las-pruebas">3. Estrategia de las Pruebas</h2>
-<h3 id="31-configuracion">3.1 Configuración</h3>
+<h2 id="3-clasificacion-y-priorizacion">3. Clasificación y Priorización</h2>
+<ul>
+<li>El equipo asigna una prioridad y severidad al bug según su impacto.</li>
+<li>Se asigna el bug al equipo responsable.</li>
+</ul>
+<hr />
+<h2 id="4-desarrollo-y-correccion">4. Desarrollo y Corrección</h2>
+<ul>
+<li>El desarrollador investiga y corrige el error en el código.</li>
+<li>Se sube la corrección en una rama o pull request, referenciando el bug.</li>
+</ul>
+<hr />
+<h2 id="5-pruebas-de-validacion">5. Pruebas de Validación</h2>
+<ul>
+<li>El equipo QA verifica la corrección aplicada.</li>
+<li>Se realizan pruebas para asegurarse que el bug esté resuelto y no haya generado otros problemas.</li>
+</ul>
+<hr />
+<h2 id="6-cierre-del-bug">6. Cierre del Bug</h2>
+<ul>
+<li>Si la validación es exitosa, el bug se marca como cerrado o resuelto.</li>
+<li>Se documenta la solución y se informa a las partes involucradas.</li>
+</ul>
+<hr />
+<h2 id="7-reapertura-si-aplica">7. Reapertura (si aplica)</h2>
+<ul>
+<li>Si el problema persiste o aparece de nuevo, se puede reabrir el bug para reiniciar el ciclo.</li>
+</ul>
+<hr />
+<h2 id="recomendaciones">Recomendaciones</h2>
+<ul>
+<li>Usar siempre la plantilla estándar para reportes para asegurar la calidad de la información.</li>
+<li>Mantener la comunicación clara y constante durante el ciclo.</li>
+<li>Priorizar bugs críticos para agilizar su resolución.</li>
+</ul>
+<hr />
+<h1 id="reporte-de-bug">🐞 Reporte de Bug</h1>
+<h2 id="titulo">📝 Título</h2>
+<p>&lt;-- Breve resumen del problema --&gt;</p>
+<h2 id="descripcion">📋 Descripción</h2>
+<p>&lt;-- Explicá detalladamente el problema encontrado --&gt;</p>
+<h2 id="pasos-para-reproducir">▶️ Pasos para reproducir</h2>
 <ol>
-<li><strong>Datos necesarios:</strong> ambiente disponible, credenciales, documentación API.</li>
-<li><strong>Modalidad:</strong> Casos en Testlink, ClickUp o Jira. Ejecución manual y automatizada.</li>
-<li><strong>Tipos de pruebas:</strong> Funcionales, APIs, rendimiento, exploratorias, responsive.</li>
-<li><strong>Integraciones:</strong> No previstas en esta etapa.</li>
-<li><strong>Regresión:</strong> Al final del ciclo y tras paso a producción.</li>
-<li><strong>Herramientas de documentación:</strong> Google Docs y Sheets.</li>
-<li><strong>Herramientas de gestión:</strong> Jira, ClickUp o Testlink.</li>
+<li></li>
+<li></li>
+<li></li>
 </ol>
-<h3 id="32-orden-de-ejecucion">3.2 Orden de Ejecución</h3>
-<p>Fases de mayo a agosto:</p>
+<h2 id="resultado-esperado">✅ Resultado esperado</h2>
+<p>&lt;-- Qué esperabas que sucediera --&gt;</p>
+<h2 id="resultado-actual">❌ Resultado actual</h2>
+<p>&lt;-- Qué ocurrió realmente --&gt;</p>
+<h2 id="entorno">🖥️ Entorno</h2>
 <ul>
-<li>Análisis</li>
-<li>Diseño de casos</li>
-<li>Ejecución</li>
-<li>Paso a producción</li>
-<li>Regresión post-release</li>
+<li>Sistema operativo: </li>
+<li>Navegador y versión: </li>
+<li>Versión de la aplicación: </li>
 </ul>
-<h3 id="33-criterios-de-inicio">3.3 Criterios de Inicio</h3>
-<ul>
-<li>QA listo</li>
-<li>Plan aprobado</li>
-<li>APIs documentadas</li>
-<li>Casos de prueba diseñados</li>
-<li>Datos y accesos disponibles</li>
-</ul>
-<h3 id="34-criterios-de-termino">3.4 Criterios de Término</h3>
-<ul>
-<li>100% de cobertura de ejecución</li>
-<li>Cero defectos críticos</li>
-<li>Documentación del cierre y responsables</li>
-</ul>
-<h3 id="35-equipos-y-responsabilidades">3.5 Equipos y Responsabilidades</h3>
-<table>
-<thead>
-<tr>
-<th>Nombre</th>
-<th>Rol</th>
-<th>Responsabilidad</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>QA Lead</td>
-<td>QA Lead</td>
-<td>Supervisar y representar QA</td>
-</tr>
-<tr>
-<td>QA Tester</td>
-<td>QA</td>
-<td>Crear y ejecutar casos de prueba</td>
-</tr>
-</tbody>
-</table>
-<h3 id="36-gestion-de-incidencias">3.6 Gestión de Incidencias</h3>
-<p>Flujo resumido:</p>
-<ol>
-<li>QA crea ticket en Clickup con evidencia.</li>
-<li>Dev revisa y corrige (o rechaza).</li>
-<li>QA revalida.</li>
-<li>Ciclo se repite hasta cierre.</li>
-</ol>
-<h3 id="37-plantilla-de-reporte-de-bugs">3.7 Plantilla de Reporte de Bugs</h3>
-<ul>
-<li>ID, Título, Descripción</li>
-<li>Precondiciones, Datos de prueba</li>
-<li>Pasos, Resultado esperado vs actual</li>
-<li>Captura de pantalla / video</li>
-<li>Severidad, asignación, sprint destino, test case asociado</li>
-</ul>
-<p>Campos opcionales: versión, navegador, ambiente.</p>
-<hr />
-<h2 id="4-entregables">4. Entregables</h2>
-<table>
-<thead>
-<tr>
-<th>Entregable</th>
-<th>Link/Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Plan de pruebas</td>
-<td>Este documento</td>
-</tr>
-<tr>
-<td>Casos de prueba</td>
-<td><a href="https://docs.google.com/spreadsheets/d/1R068pTAraD3TfT1cuLUsIXSZiYd_C6fGkctYw7fjdXE/edit?usp=share_link">Google Sheet</a></td>
-</tr>
-<tr>
-<td>Evidencias de ejecución</td>
-<td><a href="https://drive.google.com/drive/folders/1P3WAlA6S3MgXU1hHZnfBEFpgC8eE6xPs?usp=share_link">Drive Folder</a></td>
-</tr>
-<tr>
-<td>Reportes de bugs en Clikup</td>
-<td>Interno</td>
-</tr>
-<tr>
-<td>Informe final por sprint (QA review)</td>
-<td>Interno</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<p><em>Fin del Test Plan – PRIMARKET v1.0</em></p>
+<h2 id="severidad-prioridad">⚠️ Severidad / Prioridad</h2>
+<p>&lt;-- Ejemplo: Crítico, Alto, Medio, Bajo --&gt;</p>
+<h2 id="evidencia">📷 Evidencia</h2>
+<p>&lt;-- Capturas de pantalla, videos, logs, enlaces, etc. --&gt;</p>
+<h2 id="fecha-y-hora-del-reporte">📅 Fecha y hora del reporte</h2>
+<p>&lt;-- Opcional --&gt;</p>
+<h2 id="reportado-por">🙋‍♂️ Reportado por</h2>
+<p>&lt;-- Nombre o usuario --&gt;</p>
 
 
 
