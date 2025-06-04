@@ -36,4 +36,3 @@ Primarket QA Collection
 * Capturas de respuesta JSON
 * Exportación de tests pasados como PDF
 * Reporte generado con [newman](https://github.com/postmanlabs/newman) (CLI)
-asdasdasd
